@@ -316,7 +316,7 @@ footer p {
 }
 
 
-@media all and (min-width: 2000px) {
+@media all and (min-width: 1900px) {
   body{
     margin:0;
   }
