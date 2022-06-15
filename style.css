@@ -2,6 +2,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  margin: 0;
 }
 
 h2 {
@@ -12,8 +13,8 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 48px;
+  font-weight: bolder;
 }
 
 p {
@@ -25,43 +26,70 @@ section {
   padding: 20px;
 }
 
+
 section.alternate-background {
   background-color: #00a699;
   color: #fff;
 }
 
 main img {
-  width: 100px;
+  display: flex;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
+
+.formGroup {
+  display:flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
 
 .group {
   display: flex;
   flex-direction: column;
 }
 
+.section {
+  font-size: 52px;
+  padding: 20px;
+  font-weight: bolder;
+}
+
 .item {
   flex: 1;
   margin: 10px;
+  font-size: 35px;
 }
-
 .item-double {
   flex: 2;
+}
+
+.host{
+  font-size: 72px;
+}
+
+.hostList{
+  margin-left: 50px;
+}
+
+#ideas{
+  margin-bottom: 40px;
 }
 
 /* -------  Navigation ------- */
 
 header {
   background-color: #ff385c;
-  padding: 20px 20px 0 20px;
+  padding: 5px 5px 5px 5px;
   text-align: center;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 172px;
   color: #fff;
+  margin-top:20px;
 }
 
 header nav ul li {
@@ -79,27 +107,41 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+#menu {
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  margin-top:20px;
+}
+
+
 /* -------  Search Form ------- */
 form {
-  border: 2px solid #ff385c;
-  padding: 10px;
+  border: 5px solid #ff385c;
+  padding: 15px;
+  margin: 10px 20px 20px 20px;
 }
 
 form label {
   font-weight: bold;
+  margin-left: 30px;
+  font-size:26px;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  margin-right: 30px;
+  width: 50%;
+  font-size:24px;
 }
 
 form button {
   background-color: #ff385c;
   border: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 50px;
+  font-weight:600px;
   padding: 15px;
   width: 100%;
 }
@@ -113,7 +155,98 @@ footer {
 footer p {
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 50px;
+  font-size: 48px;
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width:480) {
+  form {
+    border: 5px solid #ff385c;
+    padding: 15px;
+    margin: 10px 20px 20px 20px;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form select,
+  form input {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  
+}
+@media all and (min-width: 1200px) {
+  .item {
+    width: 100%;
+  }
+
+  .group {
+    flex: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .buttonClass{
+    display:flex;
+    justify-content: flex-end;
+  }
+  .logo{
+    margin-top:0px;
+    font-size:45px;
+  }
+
+  .host{
+    font-size: 48px;
+  }
+  
+  form button{
+    width: 150px;
+    font-size:24px;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menu{
+    display:flex; 
+    place-self: center;
+  }
+
+  form label {
+    margin:0;
+    margin-right: 100%;
+  }
+
+  form select,
+  form input {
+    margin-bottom: 20px;
+    margin-right: 30px;
+    width: 100%;
+    font-size:24px;
+  }
+
+  .formGroup {
+    display:block;
+    flex-direction: column;
+  }
+  .formContainer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer p {
+    font-size: large;
+    padding:20px;
+  }
+}
