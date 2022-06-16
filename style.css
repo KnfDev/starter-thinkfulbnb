@@ -153,7 +153,7 @@ footer p {
   }
 
   form {
-    border: 5px solid #ff385c;
+    border: 2px solid #ff385c;
     padding: 10px;
     margin: 10px 20px 20px 20px;
   }
@@ -161,7 +161,7 @@ footer p {
   form select,
   form input {
     margin-bottom: 10px;
-    width: 90%;
+    width: 95%;
     font-size: 12px;
   }
 
@@ -210,6 +210,8 @@ footer p {
   .buttonClass {
     display: flex;
     justify-content: flex-end;
+    font-size:100%;
+    width: 15%
   }
   .logo {
     padding: 25px;
@@ -228,8 +230,8 @@ footer p {
 
   form button {
     padding: 10px 15px;
-    font-size: 12px;
-    width:75px;
+    font-size: 100%;
+    width:100%px;
   }
   header {
     display: flex;
@@ -245,7 +247,7 @@ footer p {
   .formContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
   #menu {
@@ -255,7 +257,7 @@ footer p {
 
   form label {
     margin: 0;
-    margin-right: 100%;
+    width:100%;
   }
 }
 
@@ -271,6 +273,6 @@ footer p {
   form button {
     padding: 10px 15px;
     font-size: 100%;
-    width:200px;
+    width: 100%;
   }
 }
